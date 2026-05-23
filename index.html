@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name — Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">YN.</a>
+  <ul class="nav-links">
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <span class="nav-badge">Open to Work</span>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <div>
+      <p class="hero-eyebrow"><span class="dot"></span> Frontend Web Developer</p>
+      <h1 class="hero-name"><br/><span class="accent">Rohit</span><br/>Raj</h1>
+    </div>
+    <div class="hero-meta">
+      <div class="hero-meta-item"><span>Based in</span><span>Lucknow, India</span></div>
+      <div class="hero-meta-item"><span>Experience</span><span>3+ Years</span></div>
+      <div class="hero-meta-item"><span>Availability</span><span>Immediate</span></div>
+      <div class="hero-meta-item"><span>Mode</span><span>Remote / Hybrid</span></div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-right-top">
+      <p class="hero-tagline">
+        <br/>
+        <br/>
+        
+      </p>
+    </div>
+    <div class="hero-right-bottom">
+      <div class="hero-role">
+        <div>CRAFTING</div>
+        <div class="line2">EXPERIENCES</div>
+        <div>FOR THE WEB</div>
+      </div>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-light">View Projects</a>
+        <a href="#contact" class="btn btn-outline-light">Hire Me</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="skills-section">
+  <div class="section-header reveal">
+    <span class="section-num">01</span>
+    <h2 class="section-title-big">TECH STACK</h2>
+  </div>
+  <div class="section-body">
+    <div class="skill-col reveal">
+      <p class="skill-col-title">Frontend</p>
+      <ul class="skill-list">
+        <li>HTML5 / CSS3</li>
+        <li>JavaScript (ES6+)</li>
+        <li>TypeScript</li>
+        <li>React.js</li>
+        <li>Next.js</li>
+        <li>Vue.js</li>
+        <li>Tailwind CSS</li>
+        <li>SASS / SCSS</li>
+      </ul>
+    </div>
+    <div class="skill-col reveal">
+      <p class="skill-col-title">Motion & UI</p>
+      <ul class="skill-list">
+        <li>Framer Motion</li>
+        <li>GSAP</li>
+        <li>CSS Animations</li>
+        <li>Three.js</li>
+        <li>Figma</li>
+        <li>Responsive Design</li>
+        <li>Web Accessibility</li>
+        <li>Design Systems</li>
+      </ul>
+    </div>
+    <div class="skill-col reveal">
+      <p class="skill-col-title">Tools & Infra</p>
+      <ul class="skill-list">
+        <li>Git / GitHub</li>
+        <li>Vite / Webpack</li>
+        <li>REST APIs</li>
+        <li>GraphQL</li>
+        <li>Jest / Vitest</li>
+        <li>Vercel / Netlify</li>
+        <li>Docker (basics)</li>
+        <li>Agile / Scrum</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-header reveal">
+    <span class="section-num">02</span>
+    <h2 class="section-title-big">EXPERIENCE</h2>
+  </div>
+  <div class="section-body" style="padding:0;">
+    <div class="exp-grid">
+      <div class="exp-sidebar">
+        <div class="exp-tab active" onclick="switchExp(0)">
+          <div class="exp-tab-role">Frontend Developer</div>
+          <div class="exp-tab-co">Company Name · 2023–Present</div>
+        </div>
+        <div class="exp-tab" onclick="switchExp(1)">
+          <div class="exp-tab-role">UI Developer</div>
+          <div class="exp-tab-co">Agency Name · 2022–2023</div>
+        </div>
+        <div class="exp-tab" onclick="switchExp(2)">
+          <div class="exp-tab-role">Web Dev Intern</div>
+          <div class="exp-tab-co">Startup Name · 2021–2022</div>
+        </div>
+      </div>
+      <div class="exp-main">
+        <div class="exp-content active" id="exp-0">
+          <div class="exp-header">
+            <div class="exp-title">FRONTEND DEVELOPER</div>
+            <div class="exp-subtitle">Company Name · Full-time · 2023–Present</div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Built and shipped 10+ React features serving 100k+ monthly active users with measurable UX improvements.</li>
+            <li>Reduced Largest Contentful Paint from 4.2s to 1.8s through lazy loading, code splitting, and image optimization.</li>
+            <li>Created a reusable component library used across 3 products, reducing dev time by 30%.</li>
+            <li>Collaborated daily with designers in Figma to deliver pixel-perfect, accessible interfaces.</li>
+          </ul>
+        </div>
+        <div class="exp-content" id="exp-1">
+          <div class="exp-header">
+            <div class="exp-title">UI DEVELOPER</div>
+            <div class="exp-subtitle">Agency Name · Full-time · 2022–2023</div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Delivered 15+ client websites using Vue.js, Nuxt, and custom CSS animations on tight deadlines.</li>
+            <li>Introduced Storybook for component documentation; adopted by the whole frontend team.</li>
+            <li>Mentored 2 junior developers on modern CSS and accessibility best practices.</li>
+          </ul>
+        </div>
+        <div class="exp-content" id="exp-2">
+          <div class="exp-header">
+            <div class="exp-title">WEB DEV INTERN</div>
+            <div class="exp-subtitle">Startup Name · Internship · 2021–2022</div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Rebuilt the marketing landing page in Next.js, improving Google Lighthouse score from 62 to 96.</li>
+            <li>Implemented GSAP scroll animations that increased average session time by 22%.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-header reveal">
+    <span class="section-num">03</span>
+    <h2 class="section-title-big">PROJECTS</h2>
+  </div>
+  <div class="section-body" style="padding:0;">
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <div class="project-num">01</div>
+        <div class="project-name">Portfolio v3</div>
+        <p class="project-desc">A Three.js powered 3D portfolio with interactive WebGL scenes and smooth page transitions. Zero dependencies for animations.</p>
+        <div class="project-tags">
+          <span class="tag">React</span>
+          <span class="tag">Three.js</span>
+          <span class="tag">GSAP</span>
+        </div>
+        <a href="https://github.com/yourusername" class="project-link" target="_blank">View on GitHub ↗</a>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-num">02</div>
+        <div class="project-name">Design System</div>
+        <p class="project-desc">A fully documented component library with 40+ components, dark mode, and WCAG 2.1 AA compliance. Used in 3 production apps.</p>
+        <div class="project-tags">
+          <span class="tag">TypeScript</span>
+          <span class="tag">Storybook</span>
+          <span class="tag">Figma</span>
+        </div>
+        <a href="https://github.com/yourusername" class="project-link" target="_blank">View on GitHub ↗</a>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-num">03</div>
+        <div class="project-name">Motion UI Kit</div>
+        <p class="project-desc">An open-source collection of CSS and Framer Motion animations. 800+ GitHub stars, featured on CSS-Tricks.</p>
+        <div class="project-tags">
+          <span class="tag">CSS</span>
+          <span class="tag">Framer Motion</span>
+          <span class="tag">Next.js</span>
+        </div>
+        <a href="https://github.com/yourusername" class="project-link" target="_blank">View on GitHub ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-header reveal">
+    <span class="section-num">04</span>
+    <h2 class="section-title-big">LET'S TALK</h2>
+  </div>
+  <div class="contact-inner">
+    <div class="contact-left reveal">
+      <div class="contact-big">HIRE ME.<br/>LET'S BUILD<br/>SOMETHING.</div>
+      <div class="contact-links">
+        <a href="mailto:you@email.com" class="contact-link">
+          rohitraj5730@email.com
+          <span>Email</span>
+        </a>
+        <a href="https://linkedin.com/in/yourprofile" class="contact-link" target="_blank">
+          https://www.linkedin.com/in/rohit-raj-539116388/
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/yourusername" class="contact-link" target="_blank">
+          https://github.com/rohitraj70
+          <span>GitHub</span>
+        </a>
+        <a href="resume.pdf" class="contact-link" download>
+          Download Resume PDF
+          <span>CV</span>
+        </a>
+      </div>
+    </div>
+    <div class="contact-right">
+      <div>
+        <p class="contact-right-label">Currently available for</p>
+        <div class="contact-right-big">FULL-TIME<br/>FREELANCE<br/>CONTRACTS</div>
+        <p class="contact-email">rohitraj5730@email.com</p>
+      </div>
+      <div>
+        <p style="font-family:var(--mono); font-size:0.72rem; opacity:0.6; letter-spacing:0.08em;">RESPONSE TIME &lt; 24 HOURS</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2024 Rohit Raj</p>
+  <p>DESIGNED & CODED BY HAND</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
